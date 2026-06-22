@@ -1,4 +1,32 @@
-# RPG-Testando-ListaLigada
-A ideia do projeto é um game para armazenar Itens, como um Rpg, que surgem itens e vc os armazena...
+# Inventario RPG Java Swing
 
-![image](https://www.image2url.com/r2/default/images/1781010143020-e796a6ed-941a-4bb0-b3d2-5ac8a7352a0c.png)
+Projeto baseado no diagrama UML .
+
+## Como compilar
+
+```bash
+javac *.java
+```
+
+## Como executar
+
+```bash
+java App
+```
+
+Ao clicar em **Salvar**, voce pode escolher o nome e a pasta do arquivo.
+Ao clicar em **Carregar**, voce pode selecionar qualquer arquivo `.dat` salvo anteriormente.
+
+Cada item exibido na grade possui botoes de **Detalhes** e **Remover**.
+
+As imagens dos itens sao geradas pelo proprio codigo em estilo pixel art simples:
+
+- Espada
+- Machado
+- Lanca
+- Arco
+- Besta
+- Cajado
+- Escudo
+- Armadura
+- Elmo
