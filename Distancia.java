@@ -1,7 +1,17 @@
+/**
+ * Tipo de item de ataque a distancia, contendo dano e alcance.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public class Distancia implements ITipoItem {
     private static final long serialVersionUID = 1L;
 
+    /** Valor de dano do item a distancia. */
     private int dano;
+    /** Valor de alcance do item a distancia. */
     private int alcance;
 
     /**

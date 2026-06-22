@@ -1,5 +1,14 @@
 import java.io.Serializable;
 
+/**
+ * Interface comum para os tipos de item do sistema.
+ * Define os getters genericos usados pela interface grafica.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public interface ITipoItem extends Serializable {
     /**
      * Retorna o dano do item, quando o tipo possuir esse atributo.

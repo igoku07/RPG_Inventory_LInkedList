@@ -4,6 +4,14 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+/**
+ * Implementacao de persistencia binaria usando serializacao padrao do Java.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public class ArquivoBinario implements IPersistencia {
     private String nomeArq;
 

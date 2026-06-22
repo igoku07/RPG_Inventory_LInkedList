@@ -1,3 +1,11 @@
+/**
+ * Interface que define operacoes basicas de gravacao e leitura de objetos.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public interface IPersistencia {
     /**
      * Grava um objeto em um arquivo.

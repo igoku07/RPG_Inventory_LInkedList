@@ -1,8 +1,17 @@
 import java.io.Serializable;
 
+/**
+ * Gerencia os itens do jogador usando uma lista circular duplamente ligada.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public class Inventario implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /** Lista circular duplamente ligada que armazena os itens. */
     private ListaDuplamenteLigadaCirc lista;
 
     /**

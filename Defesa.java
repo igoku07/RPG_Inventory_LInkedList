@@ -1,6 +1,15 @@
+/**
+ * Tipo de item defensivo, contendo o atributo de defesa.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public class Defesa implements ITipoItem {
     private static final long serialVersionUID = 1L;
 
+    /** Valor de defesa do equipamento. */
     private int defesa;
 
     /**

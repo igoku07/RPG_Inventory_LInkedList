@@ -6,8 +6,23 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.util.Random;
 
+/**
+ * Representa o bau do jogo, responsavel por gerar itens aleatorios
+ * com atributos, raridade e imagem pixel art.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public class Bau {
     private final Random random = new Random();
+
+    /**
+     * Cria um bau capaz de sortear itens aleatorios.
+     */
+    public Bau() {
+    }
 
     /**
      * Abre o bau e entrega um item aleatorio.
@@ -283,8 +298,8 @@ public class Bau {
         Color corda = new Color(235, 235, 220);
         Color flecha = new Color(214, 214, 214);
         px(g, madeira, 8, 4, 1, 6);
-        px(g, madeira, 9, 3, 1, 2);
-        px(g, madeira, 9, 9, 1, 2);
+        px(g, madeira, 9, 3, 5, 1);
+        px(g, madeira, 9, 10, 5, 1);
         px(g, corda, 13, 3, 1, 8);
         px(g, flecha, 8, 7, 7, 1);
         px(g, flecha, 14, 6, 1, 3);

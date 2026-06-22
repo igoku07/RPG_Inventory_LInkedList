@@ -1,6 +1,15 @@
+/**
+ * Tipo de item fisico, contendo o atributo de dano.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public class Fisico implements ITipoItem {
     private static final long serialVersionUID = 1L;
 
+    /** Valor de dano do item fisico. */
     private int dano;
 
     /**

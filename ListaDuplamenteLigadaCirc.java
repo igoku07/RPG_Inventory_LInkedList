@@ -2,11 +2,27 @@ import java.io.Serializable;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+/**
+ * Estrutura de dados circular duplamente ligada usada para armazenar os itens.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public class ListaDuplamenteLigadaCirc implements Iterable<Item>, Serializable {
     private static final long serialVersionUID = 1L;
 
+    /** Primeiro no da lista circular. */
     private No head;
+    /** Quantidade de itens armazenados na lista. */
     private int tamanho;
+
+    /**
+     * Cria uma lista circular duplamente ligada vazia.
+     */
+    public ListaDuplamenteLigadaCirc() {
+    }
 
     /**
      * Adiciona um item no final da lista circular duplamente ligada.

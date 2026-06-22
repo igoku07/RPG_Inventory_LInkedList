@@ -7,13 +7,26 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import javax.imageio.ImageIO;
 
+/**
+ * Representa um item armazenavel no inventario, com nome, descricao,
+ * imagem, raridade e um tipo de item.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public class Item implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /** Nome exibido do item. */
     private String nome;
+    /** Descricao textual do item. */
     private String descricao;
     private transient BufferedImage imagem;
+    /** Raridade do item. */
     private Raridade raridade;
+    /** Tipo especifico do item, como Fisico, Distancia ou Defesa. */
     private ITipoItem tipoItem;
 
     /**

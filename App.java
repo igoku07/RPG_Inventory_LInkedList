@@ -21,14 +21,29 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+/**
+ * Classe principal do sistema de inventario RPG.
+ * Responsavel por criar a interface grafica Swing e integrar bau,
+ * inventario e persistencia.
+ *
+ * @author Felipe Estima Correia Urzi
+ * @author Igor Dias da Silva
+ * @author Thieery Nadjarian da Silva
+ * @author Guilherme Pequeneza
+ */
 public class App extends JFrame {
     private static final long serialVersionUID = 1L;
     private static final String ARQUIVO_PADRAO = "inventario.dat";
 
+    /** Inventario atualmente exibido e manipulado pela interface. */
     private Inventario inventario;
+    /** Bau responsavel por gerar novos itens aleatorios. */
     private final Bau bau;
+    /** Objeto usado para salvar e carregar o inventario em arquivo. */
     private final ArquivoBinario persistencia;
+    /** Painel central onde os cards dos itens sao exibidos. */
     private final JPanel painelGrade;
+    /** Texto de status com a quantidade atual de itens. */
     private final JLabel status;
 
     /**
