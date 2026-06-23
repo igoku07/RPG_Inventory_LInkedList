@@ -1,3 +1,4 @@
+package Persistencia;
 /**
  * Interface que define operacoes basicas de gravacao e leitura de objetos.
  *

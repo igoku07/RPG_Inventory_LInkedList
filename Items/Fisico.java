@@ -1,48 +1,49 @@
+package Items;
 /**
- * Tipo de item defensivo, contendo o atributo de defesa.
+ * Tipo de item fisico, contendo o atributo de dano.
  *
  * @author Felipe Estima Correia Urzi
  * @author Igor Dias da Silva
  * @author Thierry Nadjarian Rocha da Silva
  * @author Guilherme Pequeneza
  */
-public class Defesa implements ITipoItem {
+public class Fisico implements ITipoItem {
     private static final long serialVersionUID = 1L;
 
-    /** Valor de defesa do equipamento. */
-    private int defesa;
+    /** Valor de dano do item fisico. */
+    private int dano;
 
     /**
-     * Cria um tipo de item defensivo.
+     * Cria um tipo de item fisico.
      *
-     * @param defesa valor de defesa do equipamento
+     * @param dano valor de dano causado pelo item
      */
-    public Defesa(int defesa) {
-        this.defesa = defesa;
+    public Fisico(int dano) {
+        this.dano = dano;
     }
 
     /**
-     * Defesa nao usa dano.
+     * Retorna o dano do item fisico.
+     *
+     * @return dano do item
+     */
+    @Override
+    public int getDano() {
+        return dano;
+    }
+
+    /**
+     * Fisico nao usa defesa.
      *
      * @return sempre 0
      */
     @Override
-    public int getDano() {
+    public int getDefesa() {
         return 0;
     }
 
     /**
-     * Retorna o valor defensivo do item.
-     *
-     * @return defesa do equipamento
-     */
-    @Override
-    public int getDefesa() {
-        return defesa;
-    }
-
-    /**
-     * Defesa nao usa alcance.
+     * Fisico nao usa alcance.
      *
      * @return sempre 0
      */
@@ -54,20 +55,20 @@ public class Defesa implements ITipoItem {
     /**
      * Retorna o nome do tipo para exibicao na interface.
      *
-     * @return texto "Defesa"
+     * @return texto "Fisico"
      */
     @Override
     public String getNomeTipo() {
-        return "Defesa";
+        return "Fisico";
     }
 
     /**
      * Monta o texto com os atributos deste tipo.
      *
-     * @return descricao contendo a defesa
+     * @return descricao contendo dano
      */
     @Override
     public String getDescricaoAtributos() {
-        return "Defesa: " + defesa;
+        return "Dano: " + dano;
     }
 }

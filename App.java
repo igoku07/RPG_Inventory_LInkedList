@@ -1,3 +1,6 @@
+import EDS.*;
+import Items.*;
+import Persistencia.*;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;

@@ -1,3 +1,4 @@
+package Items;
 /**
  * Tipo de item de ataque a distancia, contendo dano e alcance.
  *

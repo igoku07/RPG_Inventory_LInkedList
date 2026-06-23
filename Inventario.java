@@ -1,3 +1,6 @@
+import EDS.*;
+import Items.*;
+import Persistencia.*;
 import java.io.Serializable;
 
 /**

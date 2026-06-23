@@ -1,3 +1,5 @@
+package EDS;
+import Items.*;
 import java.io.Serializable;
 
 /**
