@@ -3,7 +3,7 @@
  *
  * @author Felipe Estima Correia Urzi
  * @author Igor Dias da Silva
- * @author Thieery Nadjarian da Silva
+ * @author Thierry Nadjarian Rocha da Silva
  * @author Guilherme Pequeneza
  */
 public class Distancia implements ITipoItem {

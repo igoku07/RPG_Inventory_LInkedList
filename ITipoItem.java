@@ -6,7 +6,7 @@ import java.io.Serializable;
  *
  * @author Felipe Estima Correia Urzi
  * @author Igor Dias da Silva
- * @author Thieery Nadjarian da Silva
+ * @author Thierry Nadjarian Rocha da Silva
  * @author Guilherme Pequeneza
  */
 public interface ITipoItem extends Serializable {
